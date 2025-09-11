@@ -1,9 +1,11 @@
 import { createStore } from "vuex";
+import user from "@/store/user";
 
 export default createStore({
-  state: {},
-  getters: {},
+  // 需要保存的全局状态放到state中
   mutations: {},
   actions: {},
-  modules: {},
+  modules: {
+    user,
+  },
 });
