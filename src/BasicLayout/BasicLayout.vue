@@ -1,6 +1,6 @@
 <template>
   <div id="basicLayout">
-    <a-layout style="height: 400px">
+    <a-layout style="min-height: 100vh">
       <a-layout-header class="header">
         <GlobalHeader />
       </a-layout-header>
@@ -24,24 +24,24 @@ import GlobalHeader from "@/components/GlobalHeader.vue";
 }
 
 #basicLayout .header {
-  padding: 30px;
+  padding: 10px;
   box-shadow: #eee 1px 1px 5px;
   margin-bottom: 16px;
-  //display: flex;
-  //justify-items: baseline;
 }
 
 #basicLayout .content {
   background: linear-gradient(to right, #fff, #ccc);
   margin-bottom: 16px;
+  padding: 20px;
 }
 
 #basicLayout .footer {
-  position: absolute;
+  position: sticky;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: blanchedalmond;
   padding: 20px;
+  text-align: center;
 }
 </style>
